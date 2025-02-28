@@ -6,9 +6,8 @@
 
 <script setup lang="ts">
 import { markRaw, computed } from 'vue';
-
 import { useModalStore } from '@/store/modalStore';
-
+  
 const modalStore = useModalStore();
 
 const component = computed(() =>
