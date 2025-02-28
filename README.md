@@ -1,6 +1,6 @@
 # User posts
 
-[DEMO LINK](https://user-post-manager.netlify.app/user-list)
+[DEMO LINK](https://user-post-manager.netlify.app)
 
 ## Features
 
