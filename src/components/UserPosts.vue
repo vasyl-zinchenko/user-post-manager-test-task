@@ -28,9 +28,9 @@
             </el-form-item>
 
             <el-form-item>
-              <el-button type="primary" @click="addPost(ruleFormRef)"
-                >Create</el-button
-              >
+              <el-button type="primary" @click="addPost(ruleFormRef)">
+                Create
+              </el-button>
               <el-button @click="resetForm">Cancel</el-button>
             </el-form-item>
           </el-form>
@@ -75,13 +75,12 @@ const posts = ref<Post[]>([]);
 const isLoading = ref(true);
 const ruleFormRef = ref<FormInstance>();
 const activeNames = ref<string[]>([]);
-
-const user = computed(() => modalStore.props.user);
-
 const form = ref<RuleForm>({
   title: '',
   body: '',
 });
+
+const user = computed(() => modalStore.props.user);
 
 const rules = reactive<FormRules<RuleForm>>({
   title: [
